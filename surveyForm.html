@@ -1,0 +1,154 @@
+<html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<div class="container">
+
+  <header class="header text-center">
+    <h1 id="title">
+      freeCodeCamp Survey Form
+    </h1>
+    <p class="fst-italic" id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row align-items-center justify-content-center">
+
+      <form action="https://sheetdb.io/api/v1/iq76zlxo3xc70" method="post" id="survey-form">
+
+        <div class="mb-4">
+          <label for="name" id="name-label" class="form-label">Name</label>
+          <input type="text" id="name" name="data[name]" class="form-control" placeholder="Enter your Name" required>
+        </div>
+
+        <div class="mb-4">
+          <label for="email" id="email-label" class="form-label">Email</label>
+          <input type="email" id="email" name="data[email]" class="form-control" placeholder="Enter your Email" required>
+        </div>
+
+        <div class="mb-4 form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="data[age]"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+
+        <div class="mb-4">
+          <label for="dropdown">Which option best describes your current role?</label>
+          <select class="form-select" id="dropdown" name="data[dropdown]">
+            <option value="default" selected>Select current role</option>
+            <option value="student">Student</option>
+            <option value="fulljob">Full Time Job</option>
+            <option value="fulllearner">Full Time Learner</option>
+            <option value="fulllearner">Prefer not to say</option>
+            <option value="fulllearner">Other</option>
+          </select>
+        </div>
+
+        <div class="form-check-label">
+          <label class="form-check-label" for="recommendation">Would you recommend freeCodeCamp to a friend?</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="recommendation1" name="data[recommendation]" value="Definitely" checked>
+          <label class="form-check-label" for="recommendation1">Definitely</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="data[recommendation]" id="recommendation2" value="Maybe">
+          <label class="form-check-label" for="recommendation2">Maybe</label>
+        </div>
+        <div class="form-check mb-4">
+          <input class="form-check-input" type="radio" name="data[recommendation]" id="recommendation3" value="Not sure">
+          <label class="form-check-label" for="recommendation3">Not sure</label>
+        </div>
+
+        <div class="mb-4">
+          <label for="favoriteField">What is your favorite feature of freeCodeCamp?</label>
+          <select class="form-select" id="favoriteField" name="data[favoriteField]">
+            <option value="default">Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="opensource">Open Source</option>
+          </select>
+        </div>
+
+        <div class="mb-4">
+          <label for="improveCheck" class="form-label">What would you like to see improved?<div id="improveBlock" class="form-text" style=display:inline> (Check all that apply)</div></label>
+          <div class="form-check p-0">
+            <input type="checkbox" id="improve1" name="data[improveCheck]" value="Front-end Projects">
+            <label for="improve1">Front-end Projects</label>
+          </div>
+          <div class="form-check p-0">
+            <input type="checkbox" id="improve2" name="data[improveCheck]" value="Back-end Projects">
+            <label for="improve2">Back-end Projects</label>
+          </div>
+          <div class="form-check p-0">
+            <input type="checkbox" id="improve3" name="data[improveCheck]" value="Data Visualization">
+            <label for="improve3">Data Visualization</label>
+          </div>
+          <div class="form-check p-0">
+            <input type="checkbox" id="improve4" name="data[improveCheck]" value="Challenges">
+            <label for="improve4">Challenges</label>
+          </div>
+          <div class="form-check p-0">
+            <input type="checkbox" id="improve5" name="data[improveCheck]" value="Open Source Community">
+            <label for="improve5">Open Source Community</label>
+          </div>
+          <div class="form-check p-0">
+            <input type="checkbox" id="improve6" name="data[improveCheck]" value="Gitter help rooms">
+            <label for="improve6">Gitter help rooms</label>
+          </div>
+          <div class="form-check p-0">
+            <input type="checkbox" id="improve7" name="data[improveCheck]" value="Videos">
+            <label for="improve7">Videos</label>
+          </div>
+          <div class="form-check p-0">
+            <input type="checkbox" id="improve8" name="data[improveCheck]" value="City Meetups">
+            <label for="improve8">City Meetups</label>
+          </div>
+          <div class="form-check p-0">
+            <input type="checkbox" id="improve9" name="data[improveCheck]" value="Wiki">
+            <label for="improve9">Wiki</label>
+          </div>
+          <div class="form-check p-0">
+            <input type="checkbox" id="improve10" name="data[improveCheck]" value="Forum">
+            <label for="improve10">Forum</label>
+          </div>
+          <div class="form-check p-0">
+            <input type="checkbox" id="improve11" name="data[improveCheck]" value="Additional Courses">
+            <label for="improve11">Additional Courses</label>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label for="comment">Any comments or suggestions?</label>
+          <div class="form-floating">
+            <textarea class="form-control" id="comment" name="data[comment]" style="height: 10rem" placeholder="Enter your comment here..."></textarea>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+</html>
